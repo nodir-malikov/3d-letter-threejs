@@ -10,6 +10,42 @@ canvas {
 	display: block;
 }
 
+#go_home {
+	position: absolute;
+	left: 20px;
+	top: 100px;
+	display: flex;
+	gap: 7px;
+	border-radius: 5px;
+	padding: 15px;
+	cursor: pointer;
+	border: 2px solid #fff;
+}
+
+a>#go_home_car {
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+}
+
+#go_home_car {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	display: flex;
+	gap: 7px;
+	border-radius: 5px;
+	padding: 15px;
+	cursor: pointer;
+	border: 2px solid #000;
+}
+
+a>#go_home {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
 #coordinates {
 	position: absolute;
 	left: 20px;
@@ -116,4 +152,60 @@ canvas {
 
 #hints_edit .key-hint {
 	border: dashed 2px #fff;
+}
+
+/* Centered and big beautiful menu */
+#menu {
+	position: absolute;
+	padding: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 400px;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px 0px #afafafbb;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#menu h5 {
+	color: #e6611d;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#menu p {
+	color: #686868;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#menu button {
+	width: 300px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	background-color: #e6611d;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#menu button:hover {
+	background-color: #e6601d;
+}
+
+#menu>a {
+	text-decoration: none;
+	color: #e6611d;
+	font-size: 20px;
+	margin-top: 20px;
 }
