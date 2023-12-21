@@ -5,7 +5,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-const directionalLight = new THREE.DirectionalLight(0xffffff, 2.5); // Цвет света и интенсивность
+const directionalLight = new THREE.DirectionalLight(0xffffff, 3.5); // Цвет света и интенсивность
 directionalLight.position.set(0, 10, 10); // Позиция света
 scene.add(directionalLight);
 
@@ -19,13 +19,17 @@ directionalLight.castShadow = true;
 const ambientLight = new THREE.AmbientLight(0x404040); // Мягкий белый свет
 scene.add(ambientLight);
 
+// Добавляем освещение
+let light = new THREE.PointLight(0xffffff, 1, 100);
+light.position.set(0, 0, 6);
+scene.add(light);
 
 // Создаем координатные оси
 const axes = new THREE.AxesHelper(20);
 scene.add(axes);
 
 const material = new THREE.MeshPhongMaterial({
-    color: 0xffffff
+    color: 0x333333
 }); // белый цвет
 
 // Создаем ножки буквы "Д"
